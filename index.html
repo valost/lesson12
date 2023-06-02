@@ -6,31 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <title>Lesson 12</title>
 </head>
 <body>
-    
+    <h1>This is lesson 12</h1>
 
-    <div class="owl-carousel">
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
+    <div class="carousel-wrapper">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="image/camp-im-1.jpg" alt="camping"></div>
+            <div class="item"><img src="image/camp-im-2.jpeg" alt="camping"></div>
+            <div class="item"><img src="image/camp-im-3.jpg" alt="camping"></div>
+            <div class="item"><img src="image/camp-im-4.jpg" alt="camping"></div>
+            <div class="item"><img src="image/camp-im-5.jpg" alt="camping"></div>
+            <div class="item"><img src="image/camp-im-6.jpg" alt="camping"></div>
+            <div class="item"><img src="image/camp-im-7.jpg" alt="camping"></div>
+        </div>
     </div>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel();
-        });
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }    
+        })
+    
     </script>
 </body>
 </html>

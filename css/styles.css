@@ -1,0 +1,9 @@
+.carousel-wrapper .owl-carousel .owl-nav button.owl-next {
+    color: green;
+    font-size: 50px;
+}
+
+.carousel-wrapper .owl-carousel .owl-nav button.owl-prev {
+    color: green;
+    font-size: 50px;
+}
